@@ -6,6 +6,7 @@ require('babel-polyfill');
 var bodyParser = require('body-parser');
 var http = require('http');
 var sha256 = require('sha256');
+var solc = require('solc');
 var https = require("https");
 const request = require('request');
 var app = express();
