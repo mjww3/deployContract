@@ -15,7 +15,7 @@ app.use(cors());
 ///app use 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 8002;
 ///This is for connecting the backend code to the web3
 if (typeof web3 !== 'undefined') {
     // Web3 has been injected by the browser (Mist/MetaMask)
@@ -36,6 +36,6 @@ var newcontractinstance = newcontract.new({from:'0x99a87f7da1e592038bfe5d5473043
 			return console.log(contract);
 		}
 })
-server.listen(8002);
+server.listen(port);
 console.log("running on port " + port);
 
