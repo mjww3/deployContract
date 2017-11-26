@@ -29,7 +29,7 @@
     "moment": "*",
     "mongoose": "*",
     "morgan": "*",
-    "cors": "*",
+    "cors": "*"
   },
   "dependencies": {
     "lodash": "^4.17.4",
