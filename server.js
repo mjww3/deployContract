@@ -29,6 +29,6 @@ if (typeof web3 !== 'undefined') {
     web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 }
 
-server.listen(8000);
+server.listen(8002);
 console.log("running on port " + port);
 
