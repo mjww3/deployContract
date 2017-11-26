@@ -4,6 +4,7 @@ var morgan = require("morgan");
 var Web3 = require('web3');
 var cors = require('cors');
 require('babel-polyfill');
+var bodyParser = require('body-parser');
 var http = require('http');
 var sha256 = require('sha256');
 var https = require("https");
@@ -27,3 +28,7 @@ if (typeof web3 !== 'undefined') {
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
     web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 }
+
+server.listen(8000);
+console.log("running on port " + port);
+
