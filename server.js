@@ -1,5 +1,4 @@
 const express = require('express');
-var mongoose = require('mongoose');
 var morgan = require("morgan");
 var Web3 = require('web3');
 var cors = require('cors');
@@ -9,7 +8,6 @@ var http = require('http');
 var sha256 = require('sha256');
 var https = require("https");
 const request = require('request');
-mongoose.connect('mongodb://mukuljain:mukuljain@ds121014.mlab.com:21014/ico');
 var app = express();
 var server = require('http').Server(app);
 //use CORS
