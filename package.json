@@ -35,7 +35,7 @@
     "lodash": "^4.17.4",
     "money": "^0.2.0",
     "node-schedule": "^1.2.4",
-    "npmlog": "^4.1.2",
+    "npmlog": "^5.0.0",
     "power-radix": "^2.5.1",
     "randomstring": "^1.1.5",
     "redis": "^2.8.0",
